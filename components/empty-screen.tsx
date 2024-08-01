@@ -24,7 +24,7 @@ export function EmptyScreen() {
             <h1 className="text-left text-xl font-semibold text-stone-800">Hi I'm Lucy, the AI assistant of Utopia Express.
             </h1>
             <p className="leading-normal text-stone-700 pt-4">
-                Ask me anything about our Human-AI hybrid digital services, or our <br/>We're glad you're here! 
+                We are a small, Human-AI hybrid digital agency. Ask me anything about our services.<br/>We're glad you're here! 
             </p>
           </div>
         </div>

@@ -36,14 +36,14 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'What are your services?',
-      subheading: 'more info about Utopia Express services',
-      message: `What are the Utopia Express services?`
+      heading: 'What services do you offer?',
+      subheading: 'Web development, AI applications, and more',
+      message: `What are the Utopia Express main services?`
     },
     {
       heading: 'What skills do we have?',
-      subheading: 'More info about Tamas, the developer',
-      message: 'What is the skills of Tamas, the developer?'
+      subheading: 'what are the things that Utopia Express is very good at?',
+      message: 'What are the things that Utopia Express is very good at?'
     },
     {
       heading: 'Why do we believe in artificial intelligence?',
@@ -52,7 +52,7 @@ export function ChatPanel({
     },
     {
       heading: 'How to contact us?',
-      subheading: `More info about how to contact us`,
+      subheading: `Contact us and we will create your vision.`,
       message: `How to contact Utopia Express?`
     }
   ]

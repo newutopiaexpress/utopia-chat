@@ -12,7 +12,7 @@ export function EmptyScreen() {
 
         <div className="grid grid-cols-4 gap-4">
           <div className="col-span-1 flex items-center justify-between relative">
-            <Image  src="/lucy2.png" alt="Lucy the AI assistant" width={200} height={200} className="float-left rounded-full w-28 h-28" />
+            <Image  src="/lucy.jpg" alt="Lucy the AI assistant" width={333} height={333} className="float-left rounded-full w-28 h-28" />
           </div>
           <div className="col-span-3 ">
             <h1 className="text-left text-xl font-semibold text-stone-800">Hi I'm Lucy, the AI assistant of Utopia Express.

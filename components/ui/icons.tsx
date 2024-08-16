@@ -90,6 +90,7 @@ function IconNextChat({
 
 function IconOpenAI({ className, ...props }: React.ComponentProps<'svg'>) {
   return (
+
     <svg
       fill="currentColor"
       viewBox="0 0 24 24"

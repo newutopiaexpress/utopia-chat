@@ -1,12 +1,14 @@
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-
+import { Inter } from "next/font/google";
 import '@/app/globals.css'
 import { cn } from '@/lib/utils'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import { Providers } from '@/components/providers'
 import { Header } from '@/components/header'
 import { Toaster } from '@/components/ui/sonner'
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: process.env.VERCEL_URL
@@ -37,14 +39,8 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          'font-sans antialiased',
-          GeistSans.variable,
-          GeistMono.variable
-        )}
-      >
+    <html lang="en" suppressHydrationWarning className={inter.className}>
+      <body className="scroll-smooth overflow-x-hidden	min-h-screen bg-fixed font-sans antialiased bg-gradient-to-tl from-red-100 to-slate-200">
         <Toaster position="top-center" />
         <Providers
           attribute="class"
@@ -54,7 +50,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="flex flex-col flex-1 bg-white">{children}</main>
+            <main className="flex flex-col flex-1 bg-gradient-to-tl from-red-100 to-slate-200">{children}</main>
           </div>
           <TailwindIndicator />
         </Providers>
